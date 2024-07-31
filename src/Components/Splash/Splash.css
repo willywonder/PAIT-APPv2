@@ -1,0 +1,15 @@
+.Splashcontainer{
+    display: flex;
+    width: 393px;
+    height: 852px;
+    padding: var(--sds-size-space-0);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: var(--sds-size-space-0);
+    background-color: #0B132B;
+}
+
+.grpicon{
+display: flex;
+}
