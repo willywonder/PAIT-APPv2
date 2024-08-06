@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import "./home.css";
-// import { MdChevronRight } from "react-icons/md";
+import Dock from "../../Components/Dock/dock";
 
 const Home = () => {
   return (
@@ -17,7 +17,7 @@ const Home = () => {
             {" "}
             <span>USD $0.50</span> / 1 $PAIT
           </div>
-          <button type="submit" className="button">
+          <button type="submit" className="buybutton">
             Buy Now
           </button>
         </div>
@@ -27,40 +27,48 @@ const Home = () => {
       </div>
       <div className="other">Other Tokens</div>
       <div className="solona">
-        
         <div className="logo3">
           <Image src="/logo3.png" alt="image" width="56" height="56" />
         </div>
-        <div className="all" >
-           <div className="sol">Solana</div>
+        <div className="all">
+          <div className="sol">Solana</div>
           <div className="two">
             <span>USD $140.90</span> / 1 $SOL
           </div>
         </div>
         <div>
           <button type="submit" className="buttton">
-            Buy 
+            Buy
           </button>
         </div>
-        
       </div>
       <div className="toncoin">
-        
         <div className="logo3">
           <Image src="/image 1.png" alt="image" width="56" height="56" />
         </div>
-        <div className="all2" >
-           <div className="ton">Toncoin</div>
+        <div className="all2">
+          <div className="ton">Toncoin</div>
           <div className="three">
             <span>USD $7.50</span> / 1 $Ton
           </div>
         </div>
         <div>
           <button type="submit" className="buttton">
-            Buy 
+            Buy
           </button>
         </div>
-        
+      </div>
+
+      <div className="button-container">
+        <button type="submit" className="walletbtn">
+          <div className="wallet">
+            <Image src="/link.png" alt="image" width="16" height="16" />
+            <span>Connect Wallet</span>
+          </div>
+        </button>
+      </div>
+      <div className="dock1">
+        <Dock />
       </div>
     </div>
   );

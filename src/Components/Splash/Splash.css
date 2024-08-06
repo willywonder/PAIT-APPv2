@@ -1,6 +1,14 @@
+body {
+    display: grid;
+    place-items: center;
+    height: 100vh; 
+    margin: 0; 
+    margin-top: 40px;
+  }
+
 .Splashcontainer{
     display: flex;
-    width: 393px;
+    width: 400px;
     height: 852px;
     padding: var(--sds-size-space-0);
     flex-direction: column;
@@ -8,6 +16,7 @@
     align-items: center;
     gap: var(--sds-size-space-0);
     background-color: #0B132B;
+    border-radius: 40px;
 }
 
 .grpicon{

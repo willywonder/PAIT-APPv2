@@ -1,0 +1,57 @@
+.Dock-container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-around;
+  gap: var(--sds-size-space-800);
+  flex: 1 0 0;
+  align-self: stretch;
+  background-color: #0b132b;
+  width: 320px;
+  height: 100px;
+  padding-left: 20px;
+  padding-right: 30px;
+  border-radius: 30px;
+}
+.home {
+  background-color: blue;
+}
+.button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px; /* Optional: add some padding for better spacing */
+  border: none; /* Optional: remove default button border */
+  background-color: transparent; /* Optional: set the background color */
+  cursor: pointer;
+}
+
+.button-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: var(--Primary-action, #45a5a3);
+  border-radius: 10px;
+  width: 64px;
+  height: 64px;
+  justify-content: center;
+  border-radius: 18px;
+}
+.button-content2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 64px;
+  height: 64px;
+  justify-content: center;
+  border-radius: 18px;
+  border-radius: 18px;
+  background: #253052;
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.3),
+    0px 2px 6px 2px rgba(0, 0, 0, 0.15);
+}
+
+.button span {
+  margin-top: 5px; /* Add some space between the image and the text */
+  color: white;
+}

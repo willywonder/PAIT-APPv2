@@ -1,0 +1,30 @@
+.solana2 {
+  display: flex;
+  align-items: center; /* Center items vertically within the container */
+  justify-content: center; /* Center items horizontally within the container */
+  gap: 20px; /* Space between items */
+  padding: 10px;
+  border-radius: var(--Corner-Large, 16px); /* Consistent border radius */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border: 1px solid var(--Border, #3a506b);
+  background: radial-gradient(
+      347.42% 100% at 0% 50%,
+      rgba(146, 75, 250, 0.2) 0%,
+      rgba(67, 176, 254, 0.08) 29%,
+      rgba(27, 251, 156, 0.09) 63.5%,
+      rgba(27, 251, 156, 0) 100%
+    ),
+    var(--Background-Secondary, #1c2541);
+  backdrop-filter: blur(5.2px);
+  height: 90px;
+  width: 360px;
+  margin-top: 10px;
+}
+.all-component span{
+  color: var(--Verdigris, #5bc0be);
+  font-family: Poppins;
+  font-size: var(--Label-Medium-Size, 16px);
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+}
