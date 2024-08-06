@@ -13,7 +13,10 @@ const Pait = () => {
           <span>USD $0.50</span> / 1 $PAIT
         </div>
         <button type="submit" className="buybutton2">
-          Buy Now
+          <div className="pait-btn">
+            <span>Buy Now </span>
+            <Image src="/blackright.png" alt="image" width="16" height="17" />
+          </div>
         </button>
       </div>
       <div className="logo2">

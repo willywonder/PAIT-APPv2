@@ -18,7 +18,10 @@ const Home = () => {
             <span>USD $0.50</span> / 1 $PAIT
           </div>
           <button type="submit" className="buybutton">
-            Buy Now
+          <div className="Buyy-btn">
+            <span>Buy Now </span>
+            <Image src="/blackright.png" alt="image" width="16" height="17" />
+          </div>
           </button>
         </div>
         <div className="logo">
@@ -36,9 +39,17 @@ const Home = () => {
             <span>USD $140.90</span> / 1 $SOL
           </div>
         </div>
-        <div>
+        <div className="sol-btn">
           <button type="submit" className="buttton">
-            Buy
+            <div className="Inside-btn">
+              <span>Buy</span>
+              <Image
+                src="/chevronright.png"
+                alt="image"
+                width="16"
+                height="17"
+              />
+            </div>
           </button>
         </div>
       </div>
@@ -52,9 +63,17 @@ const Home = () => {
             <span>USD $7.50</span> / 1 $Ton
           </div>
         </div>
-        <div>
+        <div className="ton-btn">
           <button type="submit" className="buttton">
-            Buy
+            <div className="Inside-btn">
+              <span>Buy</span>
+              <Image
+                src="/chevronright.png"
+                alt="image"
+                width="16"
+                height="17"
+              />
+            </div>
           </button>
         </div>
       </div>

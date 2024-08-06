@@ -1,12 +1,12 @@
 body {
   display: grid;
   place-items: center;
-  height: 100vh; 
-  margin: 0; 
+  height: 100vh;
+  margin: 0;
   margin-top: 40px;
 }
- 
- .Main-container {
+
+.Main-container {
   display: flex;
   padding-top: 80px;
   flex-direction: column;
@@ -57,7 +57,7 @@ body {
 .row1 {
   display: flex;
   gap: 170px;
-  margin-top:15px ;
+  margin-top: 15px;
 }
 .numbers {
   color: var(--Text, #f2f2fb);
@@ -65,16 +65,16 @@ body {
   font-size: var(--Label-Large-Size, 18px);
   font-weight: 500;
 }
-.row1 span{
-    color: var(--Text-Muted, #8A94B0);
-font-family: Inter;
-font-size: var(--Label-Large-Size, 18px);
-font-weight: 500;
+.row1 span {
+  color: var(--Text-Muted, #8a94b0);
+  font-family: Inter;
+  font-size: var(--Label-Large-Size, 18px);
+  font-weight: 500;
 }
 .row2 {
   display: flex;
   gap: 206px;
-  margin-top:15px ;
+  margin-top: 15px;
 }
 .numbers {
   color: var(--Text, #f2f2fb);
@@ -82,11 +82,11 @@ font-weight: 500;
   font-size: var(--Label-Large-Size, 18px);
   font-weight: 500;
 }
-.row2 span{
-    color: var(--Text-Muted, #8A94B0);
-font-family: Inter;
-font-size: var(--Label-Large-Size, 18px);
-font-weight: 500;
+.row2 span {
+  color: var(--Text-Muted, #8a94b0);
+  font-family: Inter;
+  font-size: var(--Label-Large-Size, 18px);
+  font-weight: 500;
 }
 .row3 {
   display: flex;
@@ -99,15 +99,14 @@ font-weight: 500;
   font-size: var(--Label-Large-Size, 18px);
   font-weight: 500;
 }
-.row3 span{
-    color: var(--Text-Muted, #8A94B0);
-font-family: Inter;
-font-size: var(--Label-Large-Size, 18px);
-font-weight: 500;
+.row3 span {
+  color: var(--Text-Muted, #8a94b0);
+  font-family: Inter;
+  font-size: var(--Label-Large-Size, 18px);
+  font-weight: 500;
 }
-.pait-component{
+.pait-component {
   margin-top: 20px;
-
 }
 .other {
   color: var(--Text-Muted, #8a94b0);
@@ -139,15 +138,27 @@ font-weight: 500;
   height: 90px;
   width: 380px;
   margin-top: 10px;
-}.buttton {
+}
+.buttton {
   display: flex;
   justify-content: center;
   gap: var(--sds-size-space-100);
   border-radius: var(--Corner-Full, 1000px);
   background: white;
   color: black;
-  padding: 15px 10px;
-  width: 100px;
+  padding: 7px 8px;
+  width: 90px;
+  cursor: pointer;
+}
+.Inside-btn{
+  display: flex;
+  gap: 10px;
+}
+.ton-btn{
+ padding-left: 40px;
+}
+.sol-btn{
+ padding-left: 20px;
 }
 .sol {
   color: var(--Text, #f2f2fb);
@@ -171,7 +182,8 @@ font-weight: 500;
   font-style: normal;
   font-weight: 300;
   letter-spacing: var(--Label-Medium-Tracking, 0.5px);
-}.toncoin {
+}
+.toncoin {
   display: flex;
   align-items: center; /* Center items vertically within the container */
   justify-content: center; /* Center items horizontally within the container */
@@ -216,7 +228,6 @@ font-weight: 500;
   font-weight: 300;
   letter-spacing: var(--Label-Medium-Tracking, 0.5px);
 }
-.Dock2{
+.Dock2 {
   margin-top: 15px;
 }
-

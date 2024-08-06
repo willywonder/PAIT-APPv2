@@ -1,8 +1,8 @@
 body {
   display: grid;
   place-items: center;
-  height: 100vh; 
-  margin: 0; 
+  height: 100vh;
+  margin: 0;
   margin-top: 40px;
 }
 .Main-container {
@@ -74,18 +74,23 @@ body {
 }
 .buybutton {
   display: flex;
-  padding: var(--sds-size-space-100) var(--sds-size-space-600);
   justify-content: center;
   align-items: center;
-  gap: var(--sds-size-space-100);
   border-radius: var(--Corner-Full, 1000px);
-  /* background: var(--Background, #0b132b); */
   background-color: #0b132b;
   color: #fbfdff;
-  padding: 10px 20px;
+  padding: 8px 10px;
   width: 140px;
   margin-top: 13px;
+  cursor: progress;
 }
+.Buyy-btn{
+  display: flex;
+  gap: 5px;
+}
+.Buyy-btn span{
+color: #c7d1db;   
+} 
 .logo {
   margin-right: 15px;
 }
@@ -129,9 +134,20 @@ body {
   border-radius: var(--Corner-Full, 1000px);
   background: white;
   color: black;
-  padding: 15px 10px;
+  padding: 7px 8px;
   width: 100px;
+  cursor: pointer;
 }
+.Inside-btn{
+  display: flex;
+  gap: 10px;
+}
+.ton-btn {
+  padding-left: 40px;
+}
+.sol-btn{
+  padding-left: 20px;
+ }
 .sol {
   color: var(--Text, #f2f2fb);
   font-family: Poppins;
@@ -204,10 +220,17 @@ body {
   margin-top: 10px;
 }
 .button-container {
-  margin-left: 120px;
+  margin-left: 127px;
   margin-top: 120px;
 }
-.walletbtn{
-  padding: 5px 20px;
+.walletbtn {
+  padding: 5px 14px;
   border-radius: 20px;
+  text-align: center;
+  font-size: 13px;
+  cursor: pointer;
+}
+.wallet{
+  display: flex;
+  gap: 5px;
 }

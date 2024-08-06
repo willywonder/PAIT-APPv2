@@ -55,9 +55,17 @@ const Homewithwallet = () => {
             <span>USD $140.90</span> / 1 $SOL
           </div>
         </div>
-        <div>
+        <div className="sol-btn">
           <button type="submit" className="buttton">
-            Buy
+            <div className="Inside-btn">
+              <span>Buy</span>
+              <Image
+                src="/chevronright.png"
+                alt="image"
+                width="16"
+                height="17"
+              />
+            </div>
           </button>
         </div>
       </div>
@@ -71,9 +79,17 @@ const Homewithwallet = () => {
             <span>USD $7.50</span> / 1 $Ton
           </div>
         </div>
-        <div>
+        <div className="ton-btn">
           <button type="submit" className="buttton">
-            Buy
+            <div className="Inside-btn">
+              <span>Buy</span>
+              <Image
+                src="/chevronright.png"
+                alt="image"
+                width="16"
+                height="17"
+              />
+            </div>
           </button>
         </div>
       </div>
