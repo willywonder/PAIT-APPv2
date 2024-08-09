@@ -1,0 +1,106 @@
+body {
+  display: grid;
+  place-items: center;
+  margin: 0;
+  margin-top: 20px;
+}
+.Container1 {
+  width: 393px;
+  height: 852px;
+  flex-shrink: 0;
+  border-radius: 55px;
+  background: rgba(0, 0, 0, 0.4);
+}
+.Inside-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--sds-size-space-800);
+  flex: 1 0 0;
+  align-self: stretch;
+  background-color: #0b132b;
+  width: 393px;
+  height: 852px;
+  margin-top: 60px;
+  border-radius: 30px;
+}
+.top {
+  display: flex;
+  padding-top: 30px;
+  padding-left: 20px;
+  gap: 240px;
+}
+.connect {
+  color: #fff;
+  font-family: Poppins;
+  font-size: var(--Title-Large-Size, 30px);
+  font-weight: 500;
+  margin-left: 110px;
+  margin-top: 45px;
+}
+.hand {
+  margin-left: 65px;
+  margin-top: 40px;
+}
+.text1 {
+  color: #fff;
+  text-align: center;
+  font-family: Poppins;
+  font-size: var(--Label-Large-Size, 18px);
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  width: 388px;
+  margin-top: 45px;
+}
+.createbtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: var(--Corner-Medium, 12px);
+  background: var(--Primary-action, #45a5a3);
+  padding: 10px 0;
+  margin-top: 170px;
+  margin-left: 20px;
+  width: 360px;
+}
+.Inside-createbtn {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.Inside-createbtn span {
+  color: var(--Text, #f2f2fb);
+  font-family: Poppins;
+  font-size: var(--Label-Large-Size, 16px);
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.linkbtn {
+  display: flex;
+  padding: var(--sds-size-space-200) var(--sds-size-space-400);
+  justify-content: center;
+  align-items: center;
+  gap: var(--sds-size-space-300);
+  align-self: stretch;
+  border-radius: var(--Corner-Medium, 12px);
+  background: var(--Border, #3a506b);
+  margin-left: 20px;
+  margin-top: 15px;
+  width: 360px;
+  padding: 10px 0;
+}
+.Inside-linkbtn {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.Inside-linkbtn {
+  color: var(--Text, #f2f2fb);
+  font-family: Poppins;
+  font-size: var(--Label-Large-Size, 16px);
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
