@@ -17,7 +17,7 @@ const Home = () => {
             {" "}
             <span>USD $0.50</span> / 1 $PAIT
           </div>
-          <button type="submit" className="buybutton">
+          <button  className="buybutton">
           <div className="Buyy-btn">
             <span>Buy Now </span>
             <Image src="/blackright.png" alt="image" width="16" height="17" />
