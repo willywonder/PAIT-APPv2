@@ -3,6 +3,9 @@ import Image from "next/image";
 import "./walletcreate4.css";
 
 const Walletcreation4 = () => {
+  const phrases = ["first", "second", "last"];
+  const words = ["dreams", "Word", "echoes"];
+
   return (
     <div className="createwallet">
       <div className="createwallet-container">
@@ -19,8 +22,28 @@ const Walletcreation4 = () => {
           Confirm that you have saved the phrase by selecting the correct
           options.
         </div>
+
+        {phrases.map((phrase, index) => (
+          <div key={index}>
+            <div className="header">
+              What is the <span>{phrase}</span> phrase?
+            </div>
+            <div className="word-container">
+              {words.map((word, i) => (
+                <span key={i} className="word">
+                  {word}
+                </span>
+              ))}
+            </div>
+          </div>
+        ))}
+        <div className="forgot-text">
+          &lt; I forgot to write them down, go back
+        </div>
+        <button className="finish-btn">Finish</button>
       </div>
     </div>
   );
 };
+
 export default Walletcreation4;
