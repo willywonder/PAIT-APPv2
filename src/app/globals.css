@@ -1,7 +1,10 @@
 body {
-  scroll-behavior: smooth;
-  margin: 0;
-  padding: 0;
-  font-style: normal;
-  line-height: normal;
+  display: grid;
+  place-items: center;
+  height: 100dvh;
+  width: 100%;
+  margin-top: 40px;
+  background-color: #0b132b;
+  margin:0;
+  padding:0;
 }
