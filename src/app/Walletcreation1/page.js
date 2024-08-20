@@ -1,9 +1,14 @@
+"use client";
 import React from "react";
 import Image from "next/image";
-
+import {useRouter} from "next/navigation"
 import "./walletcreate1.css";
 
 const Walletcreation1 = () => {
+  const router = useRouter();
+  const handleCreateNewWallet = () => {
+    router.push("/Walletcreation2");
+  };
   return (
     <div className="Container1">
       <div className="Inside-container">
@@ -23,7 +28,7 @@ const Walletcreation1 = () => {
           Your web3 wallet acts as your user account, and is where you store
           your assets like coins.
         </div>
-        <button type="submit" className="createbtn">
+        <button  className="createbtn" onClick={handleCreateNewWallet}>
           <div className="Inside-createbtn">
             <Image src="/plus.png" alt="image" width="24" height="24" />
             <span>Create New Wallet</span>

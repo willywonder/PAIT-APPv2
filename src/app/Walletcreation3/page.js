@@ -1,8 +1,22 @@
+
+"use client";
 import React from "react";
 import Image from "next/image";
 import "./walletcreate3.css";
+import { useRouter } from "next/navigation"
+
 
 const Walletcreation3 = () => {
+  const router = useRouter();
+  const handleVerifySecretPhrase = () => {
+    router.push("/Walletcreation4");
+  }
+  const words = [
+    ['word', 'quantam', 'whimsical', 'echos'],
+    ['galactic', 'dream', 'rainbow', 'moonlit'],
+    ['velvet', 'bliss', 'serenade', 'shine']
+  ];
+
   return (
     <div className="createwallet">
       <div className="createwallet-container">
@@ -21,7 +35,7 @@ const Walletcreation3 = () => {
               <Image src="/badge.png" alt="image" width="35" height="35" />
             </div>
             <div className="tip1-text">
-              These are your wallet’s secret phrases.{" "}
+              These are your wallet's secret phrases.{" "}
               <span>They let you access the wallet.</span>
             </div>
           </div>
@@ -31,7 +45,7 @@ const Walletcreation3 = () => {
             </div>
             <div className="tip1-text">
               Store there in a secure place{" "}
-              <span>to keep your wallet safe.Never share them</span>
+              <span>to keep your wallet safe. Never share them</span>
             </div>
           </div>
           <div className="tip1">
@@ -45,41 +59,27 @@ const Walletcreation3 = () => {
             </div>
             <div className="tip1-text">
               Your wallet cannot be recovered{" "}
-              <span>if you lo0se these phrases.</span>
+              <span>if you lose these phrases.</span>
             </div>
           </div>
         </div>
-        <div class="flex-container">
-          <div class="column">
-            <ul>
-              <li>word</li>
-              <li>quantam</li>
-              <li>whimsical</li>
-              <li>echos</li>
-            </ul>
-          </div>
-          <div class="column">
-            <ul>
-              <li>galactic</li>
-              <li>dream</li>
-              <li>rainbow</li>
-              <li>moonlit</li>
-            </ul>
-          </div>
-          <div class="column">
-            <ul>
-              <li>velvet</li>
-              <li>bliss</li>
-              <li>serenade</li>
-              <li>shine</li>
-            </ul>
-          </div>
+        <div className="flex-container">
+          {words.map((column, columnIndex) => (
+            <div className="column" key={`column-${columnIndex}`}>
+              <ul>
+                {column.map((word, wordIndex) => (
+                  <li key={`word-${columnIndex}-${wordIndex}`}>{word}</li>
+                ))}
+              </ul>
+            </div>
+          ))}
         </div>
-        <button type="submit" className="link-button">
+        <button onClick={handleVerifySecretPhrase} className="link-button">
           <div className="link-text">I Have Saved Them, Continue</div>
         </button>
       </div>
     </div>
   );
 };
+
 export default Walletcreation3;

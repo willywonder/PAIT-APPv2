@@ -220,6 +220,7 @@
   text-align: center;
   font-size: 13px;
   cursor: pointer;
+  border: none;
 }
 .wallet {
   display: flex;

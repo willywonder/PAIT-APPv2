@@ -1,8 +1,20 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
 import Image from "next/image";
 import "./walletcreate2.css";
+import { useRouter } from "next/navigation"
 
 const Walletcreation2 = () => {
+  const router = useRouter();
+  const [isLoading, setIsLoading] = useState(false);
+
+  const handleGenerateSecretPhrase = () => {
+    setIsLoading(true);
+    setTimeout(() => {
+      router.push("/Walletcreation3");
+    }, 2000); // 2000 milliseconds (2 seconds) delay
+  }
+
   return (
     <div className="createwallet">
       <div className="createwallet-container">
@@ -57,10 +69,20 @@ const Walletcreation2 = () => {
             </div>
           </div>
         </div>
-        <button type="submit" className="phrase-loading">
+        <button 
+          onClick={handleGenerateSecretPhrase} 
+          className={`phrase-loading ${isLoading ? 'loading' : ''}`}
+          disabled={isLoading}
+        >
           <div className="Inside-phrasebtn">
-            <Image src="/loader-circle.png" alt="image" width="24" height="24" />
-            <span>Creating Wallet</span>
+            <Image 
+              src="/loader-circle.png" 
+              alt="image" 
+              width="24" 
+              height="24" 
+              className={isLoading ? 'rotating' : ''}
+            />
+            <span>{isLoading ? 'Creating Wallet' : 'Create Wallet'}</span>
           </div>
         </button>
 
