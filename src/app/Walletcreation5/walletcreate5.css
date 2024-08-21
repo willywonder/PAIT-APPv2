@@ -1,0 +1,122 @@
+body {
+  display: grid;
+  place-items: center;
+  margin: 0;
+  margin-top: 20px;
+}
+.createwallet {
+  width: 393px;
+  height: 852px;
+  flex-shrink: 0;
+  border-radius: 55px;
+  background: rgba(0, 0, 0, 0.4);
+}
+.createwallet-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--sds-size-space-800);
+  flex: 1 0 0;
+  align-self: stretch;
+  background-color: #0b132b;
+  width: 393px;
+  height: 852px;
+  margin-top: 60px;
+  border-radius: 30px;
+}
+.top {
+  display: flex;
+  padding-top: 30px;
+  padding-left: 20px;
+  gap: 240px;
+}
+.verify {
+  color: #fff;
+  font-family: Poppins;
+  font-size: var(--Title-Large-Size, 30px);
+  font-weight: 500;
+  margin-left: 60px;
+  margin-top: 45px;
+}
+.confirm {
+  color: var(--Text-Muted, #8a94b0);
+  font-family: Poppins;
+  font-size: var(--Label-Medium-Size, 12px);
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px; /* 166.667% */
+  width: 300px;
+  margin-left: 20px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+.header {
+  color: var(--Text, #f2f2fb);
+  font-family: Poppins;
+  font-size: var(--Label-Large-Size, 14px);
+  font-style: normal;
+  font-weight: 400;
+  span {
+    color: var(--Fluorescent-Cyan, #6fffe9);
+    font-family: Poppins;
+    font-size: var(--Label-Large-Size, 16px);
+    font-style: normal;
+    font-weight: 700;
+  }
+  margin-left: 20px;
+  margin-top: 10px;
+}
+.word-container {
+  display: flex; /* Aligns items in a row */
+  gap: 60px; /* Adds space between each word */
+  margin-left: 30px;
+  margin-top: 10px;
+}
+.word {
+  padding: 10px; /* Adds padding around each word */
+  border-radius: var(--Corner-Full, 1000px);
+  background: var(--Background-Secondary, #1c2541);
+  border-radius: 18px; /* Optional: Rounds the corners */
+  color: #f2f2fb;
+}
+.forgot-text {
+  color: var(--Text-Muted, #8a94b0);
+  text-align: center;
+  font-family: Poppins;
+  font-size: var(--Label-Medium-Size, 16px);
+  font-weight: 500;
+  margin-top: 60%;
+  margin-left: 30px;
+}
+.finish {
+  display: flex;
+  height: 40px;
+  width: 80%;
+  margin-left: 30px;
+  margin-top: 15px;
+  padding: var(--sds-size-space-200) var(--sds-size-space-400);
+  justify-content: center;
+  align-items: center;
+  gap: var(--sds-size-space-300);
+  border-radius: var(--Corner-Medium, 12px);
+  background: var(--Primary-action, #45a5a3);
+  color: white; /* Optional: Sets the text color to white */
+  border: none; /* Optional: Removes the border */
+  cursor: pointer; /* Optional: Changes the cursor to a pointer on hover */
+}
+
+.finish-btn:hover {
+  background: #162033; /* Optional: Darkens the background color on hover */
+}
+
+.word {
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.word.selected {
+  background-color: white;
+  color: black; /* Optional: change the text color when selected */
+}

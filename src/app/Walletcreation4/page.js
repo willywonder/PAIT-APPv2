@@ -1,11 +1,19 @@
+"use client";
 import React from "react";
 import Image from "next/image";
 import "./walletcreate4.css";
+import { useRouter } from "next/navigation";
 
 const Walletcreation4 = () => {
   const phrases = ["first", "second", "last"];
   const words = ["dreams", "Word", "echoes"];
-
+  const handleGoBack = () => {
+    router.push("/Walletcreation3");
+  };
+  const handleFinish = () => {
+    router.push("/Walletcreation5");
+  };
+  const router = useRouter();
   return (
     <div className="createwallet">
       <div className="createwallet-container">
@@ -37,10 +45,10 @@ const Walletcreation4 = () => {
             </div>
           </div>
         ))}
-        <div className="forgot-text">
+        <div className="forgot-text" onClick={handleGoBack} style={{ cursor: 'pointer' }}>
           &lt; I forgot to write them down, go back
         </div>
-        <button className="finish-btn">Finish</button>
+        <button className="finish-btn" onClick={handleFinish}>Finish</button>
       </div>
     </div>
   );
