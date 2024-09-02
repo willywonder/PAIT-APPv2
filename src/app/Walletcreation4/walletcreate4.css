@@ -5,8 +5,7 @@ body {
   margin-top: 20px;
 }
 .createwallet {
-  width: 393px;
-  height: 852px;
+  
   flex-shrink: 0;
   border-radius: 55px;
   background: rgba(0, 0, 0, 0.4);
@@ -19,8 +18,7 @@ body {
   flex: 1 0 0;
   align-self: stretch;
   background-color: #0b132b;
-  width: 393px;
-  height: 852px;
+  
   margin-top: 60px;
   border-radius: 30px;
 }

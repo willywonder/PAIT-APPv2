@@ -50,7 +50,7 @@ body {
   font-style: normal;
   font-weight: 500;
   line-height: normal;
-  width: 388px;
+  width: 100%;
   margin-top: 45px;
 }
 .createbtn {
@@ -63,7 +63,7 @@ body {
   margin-top: 170px;
   margin-left: 20px;
   border: none;
-  width: 360px;
+  width: 350px;
   cursor: pointer;
 }
 .Inside-createbtn {
@@ -90,7 +90,7 @@ body {
   background: var(--Border, #3a506b);
   margin-left: 20px;
   margin-top: 15px;
-  width: 360px;
+  width: 350px;
   padding: 10px 0;
   cursor: pointer;
   border: none;
