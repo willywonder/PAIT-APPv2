@@ -1,26 +1,36 @@
 "use client";
 import React, { useState } from "react";
 import Image from "next/image";
-import "./walletcreate5.css";
 import { useRouter } from "next/navigation";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
+import "./walletcreate5.css";
+
 const Walletcreation5 = () => {
   const phrases = ["first", "second", "last"];
-  const words = ["dreams", "Word", "echoes"];
 
-  // State to keep track of the selected word for each phrase
-  const [selectedWords, setSelectedWords] = useState(Array(phrases.length).fill(""));
+  // Updated 2D array with different words for each phrase
+  const words = [
+    ["dreams", "vision", "future"], // Words for the first phrase
+    ["quantum", "velvet", "galactic"], // Words for the second phrase
+    ["shine", "rainbow", "serenade"], // Words for the last phrase
+  ];
+
+  const [selectedWords, setSelectedWords] = useState(
+    Array(phrases.length).fill("")
+  );
 
   const router = useRouter();
 
-  // Function to handle word selection for a specific phrase
   const handleWordClick = (phraseIndex, word) => {
     const newSelectedWords = [...selectedWords];
     newSelectedWords[phraseIndex] = word;
     setSelectedWords(newSelectedWords);
   };
-  const handleGoBack =() =>{
+
+  const handleGoBack = () => {
     router.push("/Walletcreation4");
-  }
+  };
 
   return (
     <div className="createwallet">
@@ -44,10 +54,12 @@ const Walletcreation5 = () => {
               What is the <span>{phrase}</span> phrase?
             </div>
             <div className="word-container">
-              {words.map((word, wordIndex) => (
+              {words[phraseIndex].map((word, wordIndex) => (
                 <span
                   key={wordIndex}
-                  className={`word ${selectedWords[phraseIndex] === word ? "selected" : ""}`}
+                  className={`word ${
+                    selectedWords[phraseIndex] === word ? "selected" : ""
+                  }`}
                   onClick={() => handleWordClick(phraseIndex, word)}
                 >
                   {word}
@@ -56,8 +68,12 @@ const Walletcreation5 = () => {
             </div>
           </div>
         ))}
-        <div className="forgot-text" onClick={handleGoBack} style={{ cursor: 'pointer' }}>
-          &lt; I forgot to write them down, go back
+        <div
+          className="forgot-text2"
+          onClick={handleGoBack}
+          style={{ cursor: "pointer" }}
+        >
+          <FontAwesomeIcon icon={faArrowLeft} /> I forgot to write them down, go back
         </div>
         <button className="finish">Finish</button>
       </div>

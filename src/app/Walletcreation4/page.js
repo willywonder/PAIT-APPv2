@@ -1,19 +1,31 @@
 "use client";
 import React from "react";
 import Image from "next/image";
-import "./walletcreate4.css";
 import { useRouter } from "next/navigation";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';
+import "./walletcreate4.css";
 
 const Walletcreation4 = () => {
   const phrases = ["first", "second", "last"];
-  const words = ["dreams", "Word", "echoes"];
+  
+  // Updated 2D array with different words for each phrase
+  const words = [
+    ["dreams", "vision", "future"],  // Words for the first phrase
+    ["quantum", "velvet", "galactic"],  // Words for the second phrase
+    ["shine", "rainbow", "serenade"]  // Words for the last phrase
+  ];
+
+  const router = useRouter();
+
   const handleGoBack = () => {
     router.push("/Walletcreation3");
   };
+
   const handleFinish = () => {
     router.push("/Walletcreation5");
   };
-  const router = useRouter();
+
   return (
     <div className="createwallet">
       <div className="createwallet-container">
@@ -27,8 +39,7 @@ const Walletcreation4 = () => {
         </div>
         <div className="verify">Verify Secret Phrases</div>
         <div className="confirm">
-          Confirm that you have saved the phrase by selecting the correct
-          options.
+          Confirm that you have saved the phrase by selecting the correct options.
         </div>
 
         {phrases.map((phrase, index) => (
@@ -37,7 +48,7 @@ const Walletcreation4 = () => {
               What is the <span>{phrase}</span> phrase?
             </div>
             <div className="word-container">
-              {words.map((word, i) => (
+              {words[index].map((word, i) => (
                 <span key={i} className="word">
                   {word}
                 </span>
@@ -46,7 +57,7 @@ const Walletcreation4 = () => {
           </div>
         ))}
         <div className="forgot-text" onClick={handleGoBack} style={{ cursor: 'pointer' }}>
-          &lt; I forgot to write them down, go back
+          <FontAwesomeIcon icon={faArrowLeft} /> I forgot to write them down, go back
         </div>
         <button className="finish-btn" onClick={handleFinish}>Finish</button>
       </div>
