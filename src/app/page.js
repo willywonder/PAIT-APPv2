@@ -2,7 +2,6 @@
 import React from "react";
 import Image from "next/image";
 import "./Home/home.css";
-import Dock from "@/Components/Dock/dock";
 import Loading from "./loading";
 import { useState, useEffect } from "react";
 import Homelayout from "./Layout/homelayout";

@@ -3,12 +3,11 @@ import React from "react";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 import "./walletcreate1.css";
-import { ethers } from "ethers";
-
+import * as ethers from 'ethers';
 
 const Walletcreation1 = () => {
   const router = useRouter();
-  
+
   const handleCreateNewWallet = () => {
     router.push("/Walletcreation2");
   };

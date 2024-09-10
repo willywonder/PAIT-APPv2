@@ -1,10 +1,8 @@
-
 "use client";
 import React from "react";
 import Image from "next/image";
 import "./walletcreate3.css";
 import { useRouter } from "next/navigation"
-
 
 const Walletcreation3 = () => {
   const router = useRouter();
@@ -35,7 +33,7 @@ const Walletcreation3 = () => {
               <Image src="/badge.png" alt="image" width="35" height="35" />
             </div>
             <div className="tip1-text">
-              These are your wallet's secret phrases.{" "}
+              These are your wallet&apos;s Secret Phrases.{" "}
               <span>They let you access the wallet.</span>
             </div>
           </div>
@@ -44,7 +42,7 @@ const Walletcreation3 = () => {
               <Image src="/book.png" alt="image" width="35" height="35" />
             </div>
             <div className="tip1-text">
-              Store there in a secure place{" "}
+              Store them in a secure place{" "}
               <span>to keep your wallet safe. Never share them</span>
             </div>
           </div>
