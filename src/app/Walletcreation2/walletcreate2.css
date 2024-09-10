@@ -1,23 +1,16 @@
 body {
   display: grid;
   place-items: center;
-  margin: 20px 0 0;
 }
 
-.createwallet {
-  
-  border-radius: 55px;
-  background: rgba(0, 0, 0, 0.4);
-}
+
 
 .createwallet-container {
   display: flex;
   flex-direction: column;
   gap: var(--sds-size-space-800);
   background-color: #0b132b;
-  margin-top: 60px;
   border-radius: 30px;
-  padding: 30px 20px;
 }
 
 .top {

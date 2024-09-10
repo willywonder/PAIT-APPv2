@@ -3,7 +3,6 @@ body {
   place-items: center;
   height: 100vh;
   margin: 0;
-  margin-top: 40px;
 }
 
 .Main-container {
@@ -15,7 +14,7 @@ body {
   flex: 1 0 0;
   align-self: stretch;
   background-color: #0b132b;
-  width: 400px;
+  width: 385px;
   height: 902px;
   padding-left: 20px;
   padding-right: 20px;
