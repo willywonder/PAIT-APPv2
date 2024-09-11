@@ -19,7 +19,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 12px;
-  
+
   border-radius: 12px;
   border: 1px solid rgba(255, 255, 255, 0.5);
   background: radial-gradient(
@@ -48,25 +48,26 @@
   font-weight: 600;
   line-height: var(--Label-Large-Line-Height, 20px); /* 142.857% */
   letter-spacing: var(--Label-Medium-Tracking, 0.5px);
-  font-size: 18px;
+  font-size: 14px;
 }
-.wordings  {
+.wordings {
   display: flex;
   flex-direction: column;
   gap: 5px;
 }
-.wordings p{
+.wordings p {
   margin: 0;
 }
-.wordings h2{
+.wordings h2 {
   font-weight: 600;
   font-size: 20px;
   color: #0b132b;
 }
-.one{
-  color:#3a506b
+.one {
+  color: #3a506b;
+  font-size: 14px;
 }
-.one span{
+.one span {
   color: #45a5a3;
   font-weight: 600;
 }
@@ -80,36 +81,27 @@
   font-size: 18px;
 }
 .buybutton {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 1000px;
   background-color: #0b132b;
-  color: #fbfdff;
-  padding: 0 10px;
-  cursor: pointer;
-  max-width: 140px;
-  margin-top: 8px;
-  gap: 4px;
- line-height: 143%;
- padding: 4px 20px;
- border: none;
-}
-.Buyy-btn {
+  color: white;
+  padding: 5px 20px;
+  width: 120px;
   display: flex;
-  gap: 5px;
+  gap: 4px;
+  border-radius: 15px ;
+  border: none;
+  display: flex;
+  align-items: center;
   font-size: 14px;
-}
-.Buyy-btn span {
-  color: #c7d1db;
+  font-weight: 400;
 }
 
+
 .coins-header {
-  color: #8A94B0;
+  color: #8a94b0;
   font-size: 16px;
 }
 
-.inside-btn {
+.token-button {
   display: flex;
   justify-content: center;
   gap: 4px;
@@ -118,6 +110,7 @@
   padding: 4px 16px;
   cursor: pointer;
   border-radius: 1000px;
+  border: none;
 }
 
 .ton-btn {
@@ -162,7 +155,6 @@
   padding: 16px;
 }
 
-
 .ton {
   color: var(--Text, #f2f2fb);
   font-family: Poppins;
@@ -194,8 +186,8 @@
   margin-top: 120px;
 }
 .walletbtn {
-  padding: 5px 14px;
-  border-radius: 20px;
+  padding: 6px 12px;
+  border-radius: 1000px;
   text-align: center;
   font-size: 13px;
   cursor: pointer;

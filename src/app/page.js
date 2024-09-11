@@ -6,6 +6,7 @@ import Loading from "./loading";
 import { useState, useEffect } from "react";
 import Homelayout from "./Layout/homelayout";
 import { useRouter } from "next/navigation";
+import { HiChevronRight } from "react-icons/hi";
 
 const coins = [
   {
@@ -25,9 +26,7 @@ const coins = [
 const Home = () => {
   const [showSplash, setShowSplash] = useState(true);
   const router = useRouter();
-  const handleConnectWallet = () => {
-    router.push("/Homewithwallet");
-  };
+ 
 
   useEffect(() => {
     const splashScreenShown = localStorage.getItem("splashScreenShown");
@@ -55,7 +54,9 @@ const Home = () => {
               <div className="one">
                 <span>USD $0.50</span> / 1 $PAIT
               </div>
-              <button className="buybutton">Buy Now &gt;</button>
+              <button className="buybutton">
+                Buy Now <HiChevronRight width={16} height={16} />{" "}
+              </button>
             </div>
             <div className="logo">
               <Image src="/Logo.png" alt="image" width="88" height="88" />
@@ -78,22 +79,21 @@ const Home = () => {
                   </div>
                 </div>
               </div>
-              <div className="buy-btn">
-                <button type="submit" className="inside-btn">
-                  <span>Buy</span>
-                  <Image
-                    src="/chevronright.png"
-                    alt="buy chevron"
-                    width="16"
-                    height="17"
-                  />
-                </button>
-              </div>
+
+              <button type="submit" className="token-button">
+                <span>Buy</span>
+                <Image
+                  src="/chevronright.png"
+                  alt="buy chevron"
+                  width="16"
+                  height="17"
+                />
+              </button>
             </div>
           ))}
         </div>
         <div className="button-container">
-          <button className="walletbtn" onClick={handleConnectWallet}>
+          <button className="walletbtn">
             <div className="wallet">
               <Image src="/link.png" alt="image" width="16" height="16" />
               <span>Connect Wallet</span>
