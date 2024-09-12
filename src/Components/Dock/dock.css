@@ -13,9 +13,7 @@
   padding-right: 30px;
   border-radius: 30px;
 }
-.home {
-  background-color: blue;
-}
+
 .button {
   display: flex;
   flex-direction: column;

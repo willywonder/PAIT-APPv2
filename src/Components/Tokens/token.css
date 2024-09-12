@@ -22,7 +22,6 @@
 }
 .all-component span{
   color: var(--Verdigris, #5bc0be);
-  font-family: Poppins;
   font-size: var(--Label-Medium-Size, 16px);
   font-style: normal;
   font-weight: 500;

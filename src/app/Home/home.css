@@ -42,7 +42,6 @@
 .wordings span {
   color: #45a5a3;
   color: var(--Primary-action, #45a5a3);
-  font-family: Poppins;
   font-size: var(--Label-Large-Size, 14px);
   font-style: normal;
   font-weight: 600;
@@ -121,7 +120,6 @@
 }
 .sol {
   color: var(--Text, #f2f2fb);
-  font-family: Poppins;
   font-size: 25px;
   font-style: normal;
   font-weight: 600;
@@ -157,14 +155,12 @@
 
 .ton {
   color: var(--Text, #f2f2fb);
-  font-family: Poppins;
   font-size: 25px;
   font-style: normal;
   font-weight: 600;
 }
 .all2 span {
   color: var(--Verdigris, #5bc0be);
-  font-family: Poppins;
   font-size: var(--Label-Medium-Size, 16px);
   font-style: normal;
   font-weight: 500;
@@ -172,7 +168,6 @@
 }
 .three {
   color: var(--Text-Muted, #8a94b0);
-  font-family: Poppins;
   font-size: var(--Label-Medium-Size, 16px);
   font-style: normal;
   font-weight: 300;

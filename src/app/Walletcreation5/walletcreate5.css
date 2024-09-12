@@ -23,7 +23,6 @@ body {
 }
 .verify {
   color: #fff;
-  font-family: Poppins;
   font-size: var(--Title-Large-Size, 30px);
   font-weight: 500;
   margin-left: 60px;
@@ -31,7 +30,6 @@ body {
 }
 .confirm {
   color: var(--Text-Muted, #8a94b0);
-  font-family: Poppins;
   font-size: var(--Label-Medium-Size, 12px);
   font-style: normal;
   font-weight: 500;
@@ -43,13 +41,12 @@ body {
 }
 .header {
   color: var(--Text, #f2f2fb);
-  font-family: Poppins;
   font-size: var(--Label-Large-Size, 14px);
   font-style: normal;
   font-weight: 400;
   span {
     color: var(--Fluorescent-Cyan, #6fffe9);
-    font-family: Poppins;
+
     font-size: var(--Label-Large-Size, 16px);
     font-style: normal;
     font-weight: 700;
@@ -74,7 +71,6 @@ body {
 .forgot-text2 {
   color: var(--Text-Muted, #8a94b0);
   text-align: center;
-  font-family: Poppins;
   font-size: var(--Label-Medium-Size, 16px);
   font-weight: 500;
   margin-top: 60%;

@@ -23,7 +23,6 @@ body {
 }
 .create {
   color: #fff;
-  font-family: Poppins;
   font-size: var(--Title-Large-Size, 30px);
   font-weight: 500;
   margin-left: 70px;
@@ -43,7 +42,6 @@ body {
 
 .tip1-text {
   color: var(--Text, #f2f2fb);
-  font-family: Poppins;
   font-size: var(--Label-Medium-Size, 14px);
   font-style: normal;
   font-weight: 700;
@@ -52,7 +50,6 @@ body {
 }
 .tip1-text span {
   color: var(--Text, #f2f2fb);
-  font-family: Poppins;
   font-size: var(--Label-Medium-Size, 12px);
   font-style: normal;
   font-weight: 400;
