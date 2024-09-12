@@ -1,12 +1,12 @@
 "use client";
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import "./Home/home.css";
 import Loading from "./loading";
-import { useState, useEffect } from "react";
 import Homelayout from "./Layout/homelayout";
 import { useRouter } from "next/navigation";
 import { HiChevronRight } from "react-icons/hi";
+import Walletcreation1 from "../Components/Walletcreation1/page";
 
 const coins = [
   {
@@ -25,8 +25,8 @@ const coins = [
 
 const Home = () => {
   const [showSplash, setShowSplash] = useState(true);
+  const [showWalletModal, setShowWalletModal] = useState(false);
   const router = useRouter();
- 
 
   useEffect(() => {
     const splashScreenShown = localStorage.getItem("splashScreenShown");
@@ -37,6 +37,14 @@ const Home = () => {
       setShowSplash(false);
     }
   }, []);
+
+  const handleConnectWallet = () => {
+    setShowWalletModal(true);
+  };
+
+  const handleCloseModal = () => {
+    setShowWalletModal(false);
+  };
 
   if (showSplash) return <Loading />;
 
@@ -79,8 +87,7 @@ const Home = () => {
                   </div>
                 </div>
               </div>
-
-              <button type="submit" className="token-button">
+               <button type="submit" className="token-button">
                 <span>Buy</span>
                 <Image
                   src="/chevronright.png"
@@ -93,7 +100,7 @@ const Home = () => {
           ))}
         </div>
         <div className="button-container">
-          <button className="walletbtn">
+          <button className="walletbtn" onClick={handleConnectWallet}>
             <div className="wallet">
               <Image src="/link.png" alt="image" width="16" height="16" />
               <span>Connect Wallet</span>
@@ -101,7 +108,15 @@ const Home = () => {
           </button>
         </div>
       </div>
+      {showWalletModal && (
+        <div className="modal-overlay">
+          <div className="modal-content">
+            <Walletcreation1 onClose={handleCloseModal} />
+          </div>
+        </div>
+      )}
     </Homelayout>
   );
 };
+
 export default Home;
