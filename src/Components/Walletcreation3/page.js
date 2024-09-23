@@ -2,13 +2,15 @@
 import React from "react";
 import Image from "next/image";
 import "./walletcreate3.css";
-import { useRouter } from "next/navigation"
+import { useRouter } from "next/navigation";
 
-const Walletcreation3 = () => {
+const Walletcreation3 = ({ closeModal }) => {
   const router = useRouter();
   const handleVerifySecretPhrase = () => {
     router.push("/Walletcreation4");
-  }
+    closeModal();
+  };
+
   const words = [
     ['word', 'quantam', 'whimsical', 'echos'],
     ['galactic', 'dream', 'rainbow', 'moonlit'],
@@ -22,7 +24,7 @@ const Walletcreation3 = () => {
           <div className="logo">
             <Image src="/pait.png" alt="image" width="86" height="24" />
           </div>
-          <div className="logo2">
+          <div className="logo2" onClick={closeModal}>
             <Image src="/circlex.png" alt="image" width="24" height="24" />
           </div>
         </div>

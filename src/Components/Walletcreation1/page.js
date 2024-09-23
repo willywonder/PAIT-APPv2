@@ -1,15 +1,16 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 import "./walletcreate1.css";
-import * as ethers from "ethers";
+import Walletcreation2 from "../Walletcreation2/page";
 
 const Walletcreation1 = ({ onClose }) => {
+  const [showModal, setShowModal] = useState(false);
   const router = useRouter();
 
   const handleCreateNewWallet = () => {
-    router.push("/Walletcreation2");
+    setShowModal(true);
   };
 
   const handleLinkExistingWallet = async () => {
@@ -27,6 +28,10 @@ const Walletcreation1 = ({ onClose }) => {
     } else {
       console.log("MetaMask is not installed!");
     }
+  };
+
+  const closeModal = () => {
+    setShowModal(false);
   };
 
   return (
@@ -68,6 +73,14 @@ const Walletcreation1 = ({ onClose }) => {
           </div>
         </button>
       </div>
+
+      {showModal && (
+        <div className="modal-overlay">
+          <div className="modal-content">
+            <Walletcreation2 closeModal={closeModal} />
+          </div>
+        </div>
+      )}
     </div>
   );
 };
